@@ -1,0 +1,27 @@
+#sobre {
+        width: 70%;
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;  
+        border-top: 150px solid #fff9ea;
+    
+}
+
+#sobre_nos .section-title {
+    font-size: 3rem;
+    color: #1d1d1d;  
+    align-items: center; 
+    
+}
+
+#sobre_nos .section-title span {   
+
+    color: var(--color-primary-4);
+}
+
+@media screen and (max-width: 1170px) {
+    #sobre {
+        border-top: solid 100px #fff9ea; 
+    }
+    
+}

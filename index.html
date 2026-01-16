@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-truck-arrow-right" id="nav_logo">brt Express </i>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicío</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#serviço">Serviços</a>
+                </li>
+            </ul>
+            <button class="btn-default" onclick="window.location.href='https://www.contate.me/5511953367712'">
+                Solicitar cotação
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicío</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#serviço">Serviços</a>
+                </li>
+            </ul>  
+            
+            <button class="btn-default" onclick="window.location.href='https://www.contate.me/5511953367712'">
+                Solicitar cotação
+            </button>            
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            
+            <div id="cta">
+                <h1 class="title">
+                    Conectando destinos com 
+                    <span>segurança</span>
+                </h1>
+
+                <p class="description">
+                    Evite atrasos, prejuízos e dores de cabeça. 
+                    Conte com uma transportadora preparada para 
+                    entregar sua carga no prazo, com cuidado e 
+                    tranquilidade
+                </p>
+                <div id="cta_buttons">
+                    <a href="https://www.contate.me/5511953367712" class="btn-default" target="_blank">
+                        Cotação Rápida
+                    </a>
+
+                    <a href="tel:+5511953367712" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                            (11) 9533-67712
+                        </button>
+                        
+                    </a>
+                </div>
+
+                <div id="social-media-buttons">
+                    <a href="https://contate.me/5511953367712" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/4RNoHJFe6GrtVxHv7" target="_blank">
+                       <i class="fa-solid fa-map"></i>
+                    </a>   
+                    
+                    <a href="mailto:Btrespressrl@gmail.com?subject=Cotação%20do Frete&body=Olá,%0D%0AGostaria de fazer uma Cotação!%0D%0A%0D%0AObrigado,">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a> 
+                </div>
+                    
+                </div>
+                
+            
+            <div id="banner">
+                <div class="shape"></div>
+                <img src="src/images/ladingPage.png" alt="">
+            </div>
+        </section>
+
+        <section id="sobre">
+
+            <div id="sobre_nos">
+                <h1 class="section-title">Sobre 
+                     <span>nós</span>
+                </h1>
+
+                <p class="description">
+                    A BRT Express é o resultado da visão de Ryan Gomes e Lucas Brandão, 
+                    que decidiram criar uma transportadora diferente: ágil, transparente e moderna.
+
+                    Nossa equipe não apenas "faz entregas". Nós vestimos a camisa do seu negócio. Seja uma mudança residencial 
+                    complexa ou o transporte contínuo de cargas empresariais, tratamos cada pacote com o nível de segurança e prioridade que ele merece.
+
+                    Estamos construindo uma nova era na logística, onde o atendimento é personalizado e a sua tranquilidade é a nossa métrica de sucesso.
+                    Conte com a BRT Express para impulsionar o seu negócio com segurança e eficiência
+                </p>
+            </div>
+        </section>
+
+        <section id="serviço">
+                <h2 class="section-title">Nossos 
+                     <span>serviços</span>
+                </h2>
+
+                <div id="services">
+
+                        <div id="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-motorcycle"></i>
+                            </div>
+                        
+                        <img src="src/images/moto.png" class="service-image" alt="">
+                    <h3 class="service-title">
+                        Moto
+                    </h3>
+                    <span class="service-description">Ideal para entregas rápidas em curtas distâncias.
+                                Perfeita para documentos e pequenos volumes, garantindo agilidade no 
+                                trânsito e rapidez na entrega.</span>
+                </div>
+
+                <div id="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                        
+                        <img src="src/images/carro.png" class="service-image" alt="">
+                    <h3 class="service-title">
+                        Carro
+                    </h3>
+                    <span class="service-description">Indicado para entregas que exigem mais cuidado ou proteção.
+                                Ideal para transportar encomendas com segurança e estabilidade durante o trajeto.</span>
+                </div>
+
+                <div id="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        
+                        <img src="src/images/carreto.png" class="service-image" alt="">
+                    <h3 class="service-title">
+                        Carreto
+                    </h3>
+                    <span class="service-description">Solução ideal para grandes volumes e mudanças leves.
+                            Recomendado para o transporte de mercadorias maiores, com praticidade, eficiência e segurança.
+                    </span>
+                </div>
+                </div>
+                <a href="https://www.contate.me/5511953367712" class="btn-cotação">
+                    <button class="btn-default">
+                        <i class="fa-brands fa-whatsapp"></i>
+                         &nbsp;Cotação Rápida
+                    </button>                        
+                    </a>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-title">Entre em 
+                     <span>Contato</span>
+                </h2>
+        </section>
+    </main>
+    <footer>
+
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2026 BRT Express. Todos os direitos reservados.
+            </span>
+                <div id="social-media-buttons">
+                    <a href="https://www.contate.me/5511953367712" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/4RNoHJFe6GrtVxHv7" target="_blank">
+                       <i class="fa-solid fa-map"></i>
+                    </a>  
+                    
+                    <a href="mailto:Btrespressrl@gmail.com?subject=Cotação%20do Frete&body=Olá,%0D%0AGostaria de fazer uma Cotação!%0D%0A%0D%0AObrigado,">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a> 
+                </div>            
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

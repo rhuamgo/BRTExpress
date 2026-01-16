@@ -1,0 +1,103 @@
+#serviço {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border-top: 100px solid #fff9ea;
+    
+    
+}
+
+#serviço .section-title {
+    font-size: 3rem;
+    color: #1d1d1d;  
+    align-items: center; 
+    
+}
+
+#serviço .section-title span {   
+
+    color: var(--color-primary-4);
+}
+
+#services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 35%;
+    padding: 20px;
+    background-color:#fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+
+.service-icon {
+    position: absolute;
+    background-color: var(--color-primary-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 50px 0px 70px;
+}
+
+
+#service:hover {
+    background-color: #eed38f;
+}
+
+.btn-cotação {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.service-description {
+    color: #434343;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 1170px) {
+    #services {
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    #serviço .section-title {
+        
+        text-align: center;
+        
+    }
+
+    #service {
+        width: calc(50% - 12px)
+    }
+
+    @media screen and (max-width: 600px) {
+        #service {
+            width: 100%;
+        }
+    }
+}

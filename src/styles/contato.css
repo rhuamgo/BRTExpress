@@ -1,0 +1,22 @@
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+#contato .section-title {
+    font-size: 3rem;
+    color: #1d1d1d;  
+    align-items: center; 
+    
+}
+
+#contato .section-title span {   
+
+    color: var(--color-primary-4);
+}

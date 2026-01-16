@@ -1,0 +1,146 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+#cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+  
+}
+
+#cta .title {
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {   
+
+    color: var(--color-primary-4);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+
+
+#phone_button button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-6);
+    border-radius: 12px;
+    padding: 15px 14px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    
+}
+
+#phone_button button:hover {
+    background-color: var(--color-primary-5);
+}
+
+#banner {
+    position: relative;
+    width: 55%;
+    max-width: 633px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner img {
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+    opacity: 0;
+    animation: imageFadeUp 0.9s ease-out 0.3s forwards;
+}
+
+.shape {
+   background-color: var(--color-primary-2);
+   width: 101%; 
+   height: 125%; 
+   position: absolute;
+
+   border-radius: 40% 30% 30% 20%;
+
+   top: -10%;
+   right: -2%; 
+   z-index: 1;
+
+   opacity: 0; 
+   animation: shapeEntrance 0.8s ease-out forwards;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+        border-top: 90px solid #fff9ea;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 70%;
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;
+    }
+}
+
+@keyframes shapeEntrance {
+  0% {
+    opacity: 0;
+    
+    transform: translateX(200px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes imageFadeUp {
+  0% {
+    opacity: 0;
+    
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    
+    transform: translateY(0);
+  }
+}
